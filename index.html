@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Building Cloud Enterprise ERP — Sistema en la nube para toda empresa</title>
+    <meta name="description" content="ERP en la nube completo, accesible y escalable para empresas de cualquier sector. Gestiona todo tu negocio desde una sola plataforma.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primario: #165DFF;
+            --oscuro: #0F2B5B;
+            --texto: #1F2937;
+            --texto-sec: #6B7280;
+            --fondo: #FFFFFF;
+            --fondo-claro: #F5F7FA;
+            --borde: #E5E7EB;
+            --exito: #10B981;
+            --sombra-suave: 0 2px 6px rgba(0,0,0,0.06);
+            --sombra-tarjeta: 0 4px 12px rgba(0,0,0,0.04);
+            --radio: 12px;
+            --transicion: all 0.3s ease;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--texto);
+            background: var(--fondo);
+            line-height: 1.5;
+        }
+        .contenedor {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        header {
+            position: sticky; top: 0; z-index: 100;
+            background: white; box-shadow: var(--sombra-suave);
+            height: 72px; display: flex; align-items: center;
+        }
+        .nav-wrap {
+            display: flex; justify-content: space-between; align-items: center; width: 100%;
+        }
+        .logo { font-weight: 700; font-size: 1.25rem; color: var(--primario); text-decoration: none; }
+        .nav-links { display: flex; gap: 32px; list-style: none; }
+        .nav-links a { text-decoration: none; color: var(--texto); font-weight: 500; transition: var(--transicion); }
+        .nav-links a:hover { color: var(--primario); }
+        .acciones { display: flex; gap: 16px; align-items: center; }
+        .btn {
+            padding: 10px 24px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: var(--transicion); display: inline-block;
+        }
+        .btn-primario { background: var(--primario); color: white; border: none; cursor: pointer; }
+        .btn-primario:hover { background: #0F4CD0; transform: translateY(-2px); }
+        .btn-secundario { border: 1px solid var(--primario); color: var(--primario); background: transparent; }
+        .btn-secundario:hover { background: rgba(22,93,255,0.05); }
+        .hero { padding: 80px 0; }
+        .hero-contenido { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+        h1 { font-size: 3.25rem; line-height: 1.1; margin-bottom: 24px; color: var(--oscuro); }
+        .hero p { font-size: 1.125rem; color: var(--texto-sec); margin-bottom: 32px; max-width: 520px; }
+        .seccion { padding: 64px 0; }
+        .seccion-titulo { text-align: center; font-size: 2.5rem; margin-bottom: 48px; color: var(--oscuro); }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .tarjeta {
+            background: white; border-radius: var(--radio); padding: 32px; box-shadow: var(--sombra-tarjeta); transition: var(--transicion);
+        }
+        .tarjeta:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(22,93,255,0.12); }
+        .tarjeta h3 { color: var(--oscuro); margin-bottom: 12px; font-size: 1.25rem; }
+        .tarjeta p { color: var(--texto-sec); font-size: 0.9375rem; }
+        footer { background: var(--oscuro); color: white; padding: 48px 0 24px; margin-top: 40px; }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-bottom: 32px; }
+        footer a { color: #CBD5E1; text-decoration: none; display: block; margin-bottom: 8px; transition: var(--transicion); }
+        footer a:hover { color: white; }
+        .copyright { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; text-align: center; color: #94A3B8; font-size: 0.875rem; }
+        @media (max-width: 992px) {
+            .hero-contenido, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+            .contenedor { padding: 0 24px; }
+            h1 { font-size: 2rem; }
+            .nav-links { display: none; }
+        }
+        @media (max-width: 576px) {
+            .contenedor { padding: 0 16px; }
+            .acciones .btn { padding: 8px 16px; font-size: 0.875rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="contenedor nav-wrap">
+            <a href="#" class="logo">Easy Building</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#sectores">Para Empresas</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="acciones">
+                <a href="#" class="btn btn-secundario">Iniciar sesión</a>
+                <a href="#" class="btn btn-primario">Solicitar demo</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="contenedor hero-contenido">
+            <div>
+                <h1>El ERP en la nube pensado para toda empresa</h1>
+                <p>Gestiona finanzas, ventas, inventario, recursos humanos y operaciones desde una sola plataforma. Simple, potente y escalable: crece contigo.</p>
+                <a href="#" class="btn btn-primario">Solicitar demostración gratuita</a>
+            </div>
+            <div>
+                <img src="#" alt="Plataforma Easy Building Cloud ERP" style="width:100%;border-radius:12px;background:#F5F7FA;padding:24px;">
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion" id="caracteristicas" style="background:var(--fondo-claro);">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Todo lo que necesita tu negocio</h2>
+            <div class="grid-3">
+                <div class="tarjeta">
+                    <h3>Gestión Financiera</h3>
+                    <p>Contabilidad, facturación, impuestos y reportes en tiempo real con total claridad.</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Ventas y Clientes</h3>
+                    <p>Cotizaciones, pedidos, seguimiento de cobros y base de clientes organizada.</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Inventario y Compras</h3>
+                    <p>Control de existencias, proveedores, entradas y salidas automáticas.</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Recursos Humanos</h3>
+                    <p>Personal, nóminas, asistencia y gestión de equipos integrada al sistema.</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Proyectos y Operaciones</h3>
+                    <p>Seguimiento de tareas, tiempos, costos y resultados por área o iniciativa.</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Acceso desde cualquier lugar</h3>
+                    <p>Plataforma en la nube: consulta y gestiona tu empresa desde donde estés.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion" id="sectores">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Para empresas de todos los sectores</h2>
+            <div class="grid-3">
+                <div class="tarjeta">
+                    <h3>Comercio y Servicios</h3>
+                    <p>Tiendas, distribuidores, asesorías y firmas de servicio con control total de ventas y clientes.</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Industria y Producción</h3>
+                    <p>Manufactura, transformación y ensamblaje con seguimiento de materiales y procesos.</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Construcción y Proyectos</h3>
+                    <p>Constructoras, desarrolladoras y empresas técnicas con control de obras y costos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor">
+            <div class="grid-4">
+                <div>
+                    <h3 style="margin-bottom:16px;">Easy Building</h3>
+                    <p style="color:#94A3B8;font-size:0.875rem;">Cloud Enterprise ERP</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom:16px;">Producto</h4>
+                    <a href="#caracteristicas">Características</a>
+                    <a href="#precios">Planes y Precios</a>
+                    <a href="#">Actualizaciones</a>
+                </div>
+                <div>
+                    <h4 style="margin-bottom:16px;">Empresa</h4>
+                    <a href="#">Nosotros</a>
+                    <a href="#contacto">Contacto</a>
+                    <a href="#">Trabaja con nosotros</a>
+                </div>
+                <div>
+                    <h4 style="margin-bottom:16px;">Legal</h4>
+                    <a href="#">Términos de uso</a>
+                    <a href="#">Política de privacidad</a>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2026 Easy Building Cloud Enterprise ERP. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
