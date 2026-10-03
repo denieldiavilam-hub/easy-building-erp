@@ -1,2 +1,2 @@
 # easy-building-erp
-Easy Building Cloud Enterprise ERP — Sistema en la nube para toda empresa
+Easy Building Cloud Enterprise ERP — Sistema en la nube que toda empresa necesita
